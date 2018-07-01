@@ -47,6 +47,11 @@ body {
     display: none;
 }
 
+.menu-nav--principal li.threeline-icon:hover {
+    color: #f27609;
+    cursor: pointer;
+}
+
 .capa-pagina--principal {
     color: white;
 }
@@ -292,6 +297,10 @@ body {
     .main {
         padding: 10px 5% 40px 5%;
     }
+    .main a {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
     .main p {
         text-align: left;
         line-height: 30px;
@@ -309,7 +318,20 @@ body {
         max-width: 100%;
         background-size: auto 100%;
     }
-    .blackbox{
+    .blackbox {
         opacity: 0.5;
+    }
+    .menu-js {
+        height: auto;
+    }
+    .menu-js ul {
+        height: auto;
+        text-align: center;
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+    .menu-js li {
+        display: block;
+        border-bottom: solid #f27609 1px;
     }
 }
