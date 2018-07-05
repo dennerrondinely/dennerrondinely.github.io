@@ -67,6 +67,11 @@
 			<a class="back-link" href="index.html">&larr; Voltar ao início</a>
 
 		</div>
+		<iframe id="IframeId" src="https://admin.dev.smartnx.io/nova_caixinha/index.debug.php?idTeto=1&idfaq=1#" onload="setIframeHeight(this)"></iframe>
+		
+		<script>
+			function setIframeHeight(a) { a.contentWindow.postMessage("FrameHeight", "*") } window.addEventListener("message", function (a) { a.data.hasOwnProperty("FrameHeight") && jQuery("#IframeId").css("height", a.data.FrameHeight), a.data.hasOwnProperty("FrameWidth") && jQuery("#IframeId").css("width", a.data.FrameWidth), a.data.hasOwnProperty("FrameBottom") && jQuery("#IframeId").css("bottom", a.data.FrameBottom), a.data.hasOwnProperty("FramePosition") && jQuery("#IframeId").css("position", a.data.FramePosition), a.data.hasOwnProperty("FrameAttr") && jQuery("#IframeId").css("atrr", a.data.FrameAttr) })
+		</script>
 
 
 
