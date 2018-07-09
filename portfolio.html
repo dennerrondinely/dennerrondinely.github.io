@@ -8,15 +8,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, inicial-scale=1.0">
 	<link rel="stylesheet" href="css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
-	<style>
-		iframe {
-			position: fixed;
-			bottom: 1px;
-			right: 1px;
-			border: none;
-		}
-	</style>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 
@@ -88,38 +80,6 @@
 		<a class="back-link" href="index.html">&larr; Voltar ao início</a>
 
 	</div>
-	<style>
-		iframe {
-			width: 23%;
-		}
-
-		@media (min-width: 601px) and (max-width: 800px) {
-
-			#IframeId {
-				width: 70%;
-			}
-		}
-
-		@media (min-width: 401px) and (max-width: 600px) {
-
-			#IframeId {
-				width: 100%;
-			}
-		}
-
-		@media (max-width: 400px) {
-			iframe {
-				width: 100%;
-			}
-		}
-	</style>
-	<iframe id="IframeId" src="https://admin.dev.smartnx.io/nova_caixinha/index.debug.php?idTeto=1&idfaq=1#" onload="setIframeHeight(this)"></iframe>
-
-	<script>
-		function setIframeHeight(a) { a.contentWindow.postMessage("FrameHeight", "*") } window.addEventListener("message", function (a) { a.data.hasOwnProperty("FrameHeight") && jQuery("#IframeId").css("height", a.data.FrameHeight), a.data.hasOwnProperty("FrameWidth") && jQuery("#IframeId").css("width", a.data.FrameWidth), a.data.hasOwnProperty("FrameBottom") && jQuery("#IframeId").css("bottom", a.data.FrameBottom), a.data.hasOwnProperty("FramePosition") && jQuery("#IframeId").css("position", a.data.FramePosition), a.data.hasOwnProperty("FrameAttr") && jQuery("#IframeId").css("atrr", a.data.FrameAttr) })
-	</script>
-
-
 
 </body>
 
