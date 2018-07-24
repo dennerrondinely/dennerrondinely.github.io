@@ -5,12 +5,17 @@ html, body {
 }
 
 body {
-    background-color: #1D3557;
+    background-image: url('../img/background_smart3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
     font-family: 'Montserrat', sans-serif;
 }
 
 .menu-nav--principal {
-    background-color: #1D3557;
+    background-color: #020e34;
     color: white;
     height: 50px;
     animation-name: navegacao;
@@ -40,7 +45,7 @@ body {
 }
 
 .menu-nav--principal a:hover {
-    color: #DB504A;
+    color: #1cd6d0;
 }
 
 .menu-nav--principal li.threeline-icon {
@@ -48,7 +53,7 @@ body {
 }
 
 .menu-nav--principal li.threeline-icon:hover {
-    color: #DB504A;
+    color: #1cd6d0;
     cursor: pointer;
 }
 
@@ -57,7 +62,7 @@ body {
 }
 
 .capa-pagina--principal span {
-    color: #DB504A;
+    color: #020e34;
     display: block;
 }
 
@@ -127,7 +132,7 @@ body {
 }
 
 .main h3 {
-    color: #DB504A;
+    color: #020e34;
     font-size: 12px;
     text-transform: uppercase;
 }
@@ -154,10 +159,11 @@ body {
     color: gray;
 }
 
-.icons-contato i{
-    font-size: 50px;
-    margin-right: 15px;
-    color: #a8dadc;
+.icons-contato {
+    display: flex;
+}
+.icons-contato a{
+    margin-right: 10px;
 }
 
 .social-img {
@@ -200,7 +206,7 @@ body {
 
 .blackbox-text h1 {
     font-size: 16px;
-    color: #DB504A;
+    color: #020e34;
     text-transform: uppercase;
     margin-top: 0;
 }
@@ -218,7 +224,31 @@ body {
 }
 
 .back-link {
-    color: #DB504A;
+    color: #020e34;
+}
+
+.redes-sociais {
+    background: url('../img/redes_sociais.png');
+    width: 50px;
+    height: 50px;
+    background-size: 285px;
+    background-repeat: no-repeat;
+}
+
+#linkedin {
+    background-position: -10px -4px;
+}
+
+#github {
+    background-position: -149px -4px;
+}
+
+#codepen {
+    background-position: -79px -4px;
+}
+
+#instagram {
+    background-position: -219px -4px;
 }
 
 @keyframes profile-capa {
@@ -267,6 +297,12 @@ body {
 }
 
 @media (max-width: 1000px) {
+    body {
+        /* background-color: #1D3557; */
+        background-image: url('../img/background_smart_mobile.jpg');
+        background-size: 100% 100%;
+        font-family: 'Montserrat', sans-serif;
+    }
     .menu-nav--principal li {
         display: none;
     }
@@ -338,6 +374,6 @@ body {
     }
     .menu-js li {
         display: block;
-        border-bottom: solid #DB504A 1px;
+        border-bottom: solid #020e34 1px;
     }
 }
