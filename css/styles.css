@@ -226,6 +226,11 @@ body {
     margin-top: 40px
 }
 
+.foto-trabalhos-mobile {
+    width: 20%;
+    margin: 10% auto auto 40%;
+}
+
 .back-link {
     color: #020e34;
 }
@@ -378,5 +383,9 @@ body {
     .menu-js li {
         display: block;
         border-bottom: solid #020e34 1px;
+    }
+    .foto-trabalhos-mobile {
+        width: 100%;
+        margin: 0;
     }
 }
