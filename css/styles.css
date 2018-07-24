@@ -10,7 +10,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #464646;
+    background-color: #086f6e;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -387,5 +387,8 @@ body {
     .foto-trabalhos-mobile {
         width: 100%;
         margin: 0;
+    }
+    #curriculo h3 {
+        clear: both;
     }
 }
