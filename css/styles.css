@@ -236,7 +236,7 @@ body {
 }
 
 .redes-sociais {
-    /* background: url('../img/redes_sociais.png'); */
+    background: url('../img/redes_sociais.png');
     width: 50px;
     height: 50px;
     background-size: 285px;
