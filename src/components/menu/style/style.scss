@@ -41,6 +41,30 @@
   display: none;
 }
 
+@media (max-width: 1000px) {
+  .menu-nav--principal{    
+    li {
+      display: none;
+    }
+    li.threeline-icon {
+      display: inline-block;
+    }
+  }
+  .menu-js {
+    height: auto;
+    ul {
+      height: auto;
+      text-align: center;
+      padding-right: 15%;
+      padding-left: 15%;
+    }
+    li {
+      display: block;
+      border-bottom: solid #086f6e 1px;
+    }
+  }
+}
+
 @keyframes navegacao {
     0% {
         opacity: 0;

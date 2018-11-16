@@ -18,7 +18,7 @@
 
 			<p>Dênner Rondinely da Silva</p>
 
-			<h3>Data de Nascimento:</h3>
+			<h3 style="clear: both;">Data de Nascimento:</h3>
 
 			<p>15/09/1991</p>
 
@@ -69,7 +69,7 @@
 		</div>
 </template>
 <script>
-// import "./style/style.scss";
+import "./style/style.scss";
 export default {
   name: "curriculo"
 };

@@ -38,3 +38,17 @@
     }
   }
 }
+@media (max-width: 1000px) { 
+  
+  .miniatura {
+    max-width: 100%;
+    background-size: auto 100%;
+  }
+  .blackbox {
+    opacity: 0.5;
+  }
+  .foto-trabalhos-mobile {
+    width: 100%;
+    margin: 0;
+  }
+}

@@ -17,13 +17,7 @@ body {
 .main {
   padding: 40px 180px 80px 100px;
   animation-name: conteudo;
-  animation-duration: 2s;
-  .cv-pic {
-    float: left;
-    width: 200px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-  }
+  animation-duration: 2s;  
 
   h1 {
     color: white;
@@ -68,88 +62,18 @@ body {
 
 @media (max-width: 1000px) {
   body {
-    /* background-color: #1D3557; */
-    /* background-image: url('../img/background_smart_mobile.jpg'); */
     background-size: 100% 100%;
     font-family: "Montserrat", sans-serif;
   }
-  .menu-nav--principal li {
-    display: none;
-  }
-  .menu-nav--principal li.threeline-icon {
-    display: inline-block;
-  }
-  .profile-pic--principal {
-    width: 100%;
-  }
-  .profile-pic--principal img {
-    margin-top: 0px;
-    max-width: 80%;
-  }
-  .profile-title--principal {
-    text-align: center;
-    margin-top: 0px;
-    width: 100%;
-  }
-  .profile-title--principal h1 {
-    margin-top: 30px;
-    font-size: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .profile-title--principal h2 {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .capa-pagina--principal div {
-    display: block;
-    height: auto;
-  }
   .main {
     padding: 10px 5% 40px 5%;
-  }
-  .main a {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-  }
-  .main p {
-    text-align: left;
-    line-height: 30px;
-  }
-  .caminho li {
-    font-size: 14px;
-  }
-  .cv-pic {
-    float: none;
-    max-width: 100%;
-    margin-right: 0px;
-  }
-  .miniatura {
-    max-width: 100%;
-    background-size: auto 100%;
-  }
-  .blackbox {
-    opacity: 0.5;
-  }
-  .menu-js {
-    height: auto;
-  }
-  .menu-js ul {
-    height: auto;
-    text-align: center;
-    padding-right: 15%;
-    padding-left: 15%;
-  }
-  .menu-js li {
-    display: block;
-    border-bottom: solid #086f6e 1px;
-  }
-  .foto-trabalhos-mobile {
-    width: 100%;
-    margin: 0;
-  }
-  #curriculo h3 {
-    clear: both;
+    a {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+    p {
+      text-align: left;
+      line-height: 30px;
+    }
   }
 }
