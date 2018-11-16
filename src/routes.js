@@ -8,8 +8,8 @@ import Lobo from './views/artes/paginas/lobo.vue';
 import Lago from './views/artes/paginas/lago.vue';
 import Espaco from './views/artes/paginas/espaco.vue';
 import Sol from './views/artes/paginas/sol.vue';
-import Portfolio from './views/portifolio/portifolio.vue';
-import Login from './views/portifolio/paginas/login.vue'
+import Portfolio from './views/portfolio/portfolio.vue'
+import Login from './views/portfolio/paginas/login.vue'
 
 export const routes = [
     { path: '/', component: Home },
@@ -22,6 +22,6 @@ export const routes = [
     { path: '/artes/lago', component: Lago },
     { path: '/artes/espaco', component: Espaco },
     { path: '/artes/sol', component: Sol },
-    { path: '/portifolio', component: Portfolio },
-    { path: '/portifolio/login', component: Login }
+    { path: '/portfolio', component: Portfolio },
+    { path: '/portfolio/login', component: Login }
 ];

@@ -1,11 +1,11 @@
 <template>
 <div class="main">
-    <h1>Portfolio</h1>
+    <h1>Portfólio</h1>
 
         <Miniatura v-for="mini in miniatura" :key="mini.id"
             :titulo ="mini.titulo"
             :desc ="mini.desc"
-            :referencia ="'portifolio/'+mini.referencia"
+            :referencia ="'portfolio/'+mini.referencia"
             :image ="mini.image"
         />
     </div>
@@ -13,7 +13,7 @@
 <script>
 import Miniatura from "../../components/miniatura/miniatura.vue";
 export default {
-  name: "portifolio",
+  name: "portfolio",
   data: function() {
     return {
       miniatura: [

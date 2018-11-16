@@ -16,7 +16,7 @@ export default {
     return {
       pagina: [
         {
-          titulo: "Portifolio",
+          titulo: "Portfólio",
           desc: "Designe Gráfico",
           image: "https://firebasestorage.googleapis.com/v0/b/portifolio-d34f0.appspot.com/o/portifolio%2Flogin.jpg?alt=media&token=3059865d-3e96-4433-bde5-d6311d123fe0",
           paragrafo: [
