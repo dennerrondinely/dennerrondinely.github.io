@@ -24,6 +24,14 @@ npm run test
 ```
 npm run lint
 ```
+### Deploy in branch homolog
+```
+npm run deploy:homolog
+```
+### Deploy in branch master
+```
+npm run deploy:master
+```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
