@@ -1,19 +1,29 @@
 <template>
   <div id="app">
-    <Menu />
-    <router-view></router-view>
+    <router-view name="header"/>
+    <div class="wrapper">
+      <router-view/>
+    </div>
+    <router-view name="footer"/>
   </div>
 </template>
 
-<script>
-import Menu from './components/menu/menu.vue';
-
-import './style/style.scss';
-
-export default {
-  name: 'app',
-  components: {
-    Menu
+<style lang="scss">
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+#nav {
+  padding: 30px;
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    &.router-link-exact-active {
+      color: #42b983;
+    }
   }
 }
-</script>
+</style>
