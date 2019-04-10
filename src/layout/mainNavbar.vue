@@ -56,16 +56,27 @@ export default {};
     justify-content: space-between;
     flex-wrap: nowrap;
     .navigation {
+      -webkit-box-flex: 1;
+      flex-grow: 1;
+      -webkit-box-align: center;
+      align-items: center;
+      display: flex;
+      flex-basis: auto;
+      background: transparent;
       .navigation-nav {
+        margin-top: 0;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
         padding-left: 0;
-        margin: 0 0 0 auto;
+        margin-bottom: 0;
         list-style: none;
+        margin-left: auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
         .nav-item {
           list-style: none;
           a {
+            display: block;
             text-decoration: none;
             background-color: transparent;
             color: #fff;
