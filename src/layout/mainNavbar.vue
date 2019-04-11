@@ -2,7 +2,7 @@
   <nav class="nav-bar">
     <div class="container">
       <div class="nav-bar--logo">
-        <router-link :to="{name: '/'}" tag="a" class="nav-bar--link">LinkTitle</router-link>
+        <router-link :to="{name: 'index'}" tag="a" class="nav-bar--link">LinkTitle</router-link>
       </div>
       <div class="navigation">
         <ul class="navigation-nav">
@@ -41,7 +41,8 @@ export default {};
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
   margin-bottom: 20px;
-  background-color: #f96332 !important;
+  background-color: transparent;
+  z-index: 1;
   .container {
     width: 100%;
     max-width: 1140px;
