@@ -99,12 +99,6 @@ export default {
         cursor: pointer;
         display: none;
       }
-      .btn-show {
-        display: block;
-      }
-      .btn-close {
-        display: none;
-      }
       .navigation-nav {
         margin-top: 0;
         display: flex;
@@ -115,6 +109,12 @@ export default {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         flex-direction: row;
+        .btn-close {
+          display: none;
+          &:hover {
+            color: #00adef;
+          }
+        }
         .nav-item {
           list-style: none;
           a {
@@ -126,6 +126,9 @@ export default {
             font-size: 0.7142em;
             padding: 0.5rem 0.7rem;
             line-height: 1.625rem;
+            &:hover {
+              color: #00adef;
+            }
           }
         }
       }
@@ -139,34 +142,41 @@ export default {
   }
 }
 @media screen and (max-width: 1000px) {
-  .navigation {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .btn-close {
-    display: block !important;
-    z-index: 1;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  .navigation-nav {
-    position: absolute;
-    background: rgba(0, 0, 0, 0)
-      linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgb(9, 9, 9)) repeat scroll
-      0% 0%;
-    right: 0;
-    top: -100vh;
-    height: 100vh;
-    width: 100vw;
-    transition: 0.5s;
-  }
-  .navigation-nav-show {
-    display: flex !important;
-    flex-direction: column !important;
-    position: absolute;
-    right: 0;
-    top: 0;
+  .nav-bar {
+    .container {
+      .navigation {
+        display: flex;
+        justify-content: flex-end;
+        .navigation-nav {
+          position: absolute;
+          background: #000000e6;
+          right: 0;
+          top: -100vh;
+          height: 100vh;
+          width: 100vw;
+          transition: 0.5s;
+          font-size: 30px;
+          justify-content: space-around;
+          .btn-close {
+            display: block !important;
+            z-index: 1;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+          }
+        }
+        .navigation-nav-show {
+          display: flex !important;
+          flex-direction: column !important;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .btn-show {
+          display: block;
+        }
+      }
+    }
   }
 }
 </style>

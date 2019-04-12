@@ -76,7 +76,7 @@ export default {
     }
   }
   .content-buttons {
-    width: 20%;
+    width: 320px;
     position: relative;
     top: -35px;
     display: flex;
