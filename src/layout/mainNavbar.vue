@@ -2,7 +2,7 @@
   <nav class="nav-bar">
     <div class="container">
       <div class="nav-bar--logo">
-        <router-link :to="{name: 'index'}" tag="a" class="nav-bar--link">LinkTitle</router-link>
+        <router-link :to="{name: 'index'}" tag="a" class="nav-bar--link">Dênner</router-link>
       </div>
       <div class="navigation">
         <ul class="navigation-nav">
