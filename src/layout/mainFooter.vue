@@ -11,7 +11,6 @@ export default {};
 <style lang="scss" scoped>
   footer {
     height: 53px;
-    width: 100vw;
     bottom: 0;
     left: 0;
     right: 0;
