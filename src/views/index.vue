@@ -46,6 +46,72 @@
           all of his own music, giving it a warm, intimate feel with a solid groove
           structure. An artist of considerable range.
         </p>
+        <p>
+          An artist of considerable range, Ryan — the name taken by
+          Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records
+          all of his own music, giving it a warm, intimate feel with a solid groove
+          structure. An artist of considerable range.
+        </p>
+        <p>
+          An artist of considerable range, Ryan — the name taken by
+          Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records
+          all of his own music, giving it a warm, intimate feel with a solid groove
+          structure. An artist of considerable range.
+        </p>
+        <p>
+          An artist of considerable range, Ryan — the name taken by
+          Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records
+          all of his own music, giving it a warm, intimate feel with a solid groove
+          structure. An artist of considerable range.
+        </p>
+        <p>
+          An artist of considerable range, Ryan — the name taken by
+          Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records
+          all of his own music, giving it a warm, intimate feel with a solid groove
+          structure. An artist of considerable range.
+        </p>
+        <p>
+          An artist of considerable range, Ryan — the name taken by
+          Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records
+          all of his own music, giving it a warm, intimate feel with a solid groove
+          structure. An artist of considerable range.
+        </p>
+        <p>
+          An artist of considerable range, Ryan — the name taken by
+          Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records
+          all of his own music, giving it a warm, intimate feel with a solid groove
+          structure. An artist of considerable range.
+        </p>
+        <p>
+          An artist of considerable range, Ryan — the name taken by
+          Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records
+          all of his own music, giving it a warm, intimate feel with a solid groove
+          structure. An artist of considerable range.
+        </p>
+        <p>
+          An artist of considerable range, Ryan — the name taken by
+          Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records
+          all of his own music, giving it a warm, intimate feel with a solid groove
+          structure. An artist of considerable range.
+        </p>
+        <p>
+          An artist of considerable range, Ryan — the name taken by
+          Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records
+          all of his own music, giving it a warm, intimate feel with a solid groove
+          structure. An artist of considerable range.
+        </p>
+        <p>
+          An artist of considerable range, Ryan — the name taken by
+          Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records
+          all of his own music, giving it a warm, intimate feel with a solid groove
+          structure. An artist of considerable range.
+        </p>
+        <p>
+          An artist of considerable range, Ryan — the name taken by
+          Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records
+          all of his own music, giving it a warm, intimate feel with a solid groove
+          structure. An artist of considerable range.
+        </p>
       </div>
     </div>
   </div>
@@ -116,7 +182,6 @@ export default {
   .content-background {
     position: absolute;
     min-height: 550px;
-    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgb(9, 9, 9));
     max-height: 999px;
     padding: 0;
     color: #ffffff;
