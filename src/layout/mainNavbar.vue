@@ -41,6 +41,7 @@ export default {
   methods: {
     ativaMenu() {
       this.button = !this.button;
+      document.body.style.overflow = this.button ? '' : 'hidden';
     },
     handleScroll(evt, el) {
       if (window.scrollY > 50) {
