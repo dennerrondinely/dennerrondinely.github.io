@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav-bar">
+  <nav class="nav-bar" :style="{background}" v-scroll="handleScroll">
     <div class="container">
       <div class="nav-bar--logo">
         <router-link :to="{name: 'index'}" tag="a" class="nav-bar--link">Dênner</router-link>
@@ -25,7 +25,22 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      background: "transparent"
+    };
+  },
+  methods: {
+    handleScroll(evt, el) {
+      if (window.scrollY > 50) {
+       this.background = 'linear-gradient(0deg, rgba(44, 44, 44, 0.2), #090909)'
+      } else {
+        this.background = 'transparent'
+      }
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -43,6 +58,7 @@ export default {};
   margin-bottom: 20px;
   background-color: transparent;
   z-index: 1;
+  transition: .75s;
   .container {
     width: 100%;
     max-width: 1140px;

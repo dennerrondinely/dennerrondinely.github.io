@@ -14,6 +14,6 @@ export default {};
     bottom: 0;
     left: 0;
     right: 0;
-    background: grey;
+    background: #201f1f;
   }
 </style>
