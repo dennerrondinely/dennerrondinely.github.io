@@ -58,21 +58,25 @@ export default {
 </script>
 <style lang="scss" scoped>
 .content {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   .content-info {
-    padding: 0 10em;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 40px 10px;
     p {
+      width: 60%;
       font-size: 18px;
-      width: 35em;
+      padding: 5px 15px;
       color: #8a8989;
     }
   }
   .content-buttons {
-    width: 20em;
+    width: 20%;
     position: relative;
     top: -35px;
     display: flex;
@@ -149,7 +153,7 @@ export default {
       .profile-info {
         padding: 5px;
         margin: 10px 0 0 0;
-        width: 22em;
+        width: 50%;
         display: flex;
         justify-content: space-around;
         .info-box {
