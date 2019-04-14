@@ -31,18 +31,10 @@ export default {
     "icon-usa": usa,
     "icon-esp": esp,
   },
-  props: {
-    linguage: {
-      type: String,
-      default: "PT"
-    },
-    texto: {
-      type: String,
-      default: "Portugues"
-    }
-  },
   data() {
     return {
+      texto: 'Portugês',
+      linguage: 'PT',
       status: true
     };
   },
@@ -68,6 +60,7 @@ export default {
   position: relative;
   display: inline-block;
   vertical-align: middle;
+  cursor: pointer;
   .select--cores {
     color: #fff;
     display: flex;

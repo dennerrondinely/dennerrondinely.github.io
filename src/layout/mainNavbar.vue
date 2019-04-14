@@ -3,7 +3,7 @@
     <div class="container">
       <div class="nav-bar--logo">
         <router-link :to="{name: 'index'}" tag="a" class="nav-bar--link">Dênner</router-link>
-        <app-linguage />
+        <app-linguage @linguage="mudaLinguagem($event)"/>
       </div>
       <div class="navigation">
         <div :class="{'btn-menu': true, 'btn-show': button}" @click="ativaMenu">
@@ -44,6 +44,10 @@ export default {
     };
   },
   methods: {
+    mudaLinguagem(valor) {
+      this.$store.dispatch('loadingLinguage', valor);
+      console.log(valor)
+    },
     ativaMenu() {
       this.button = !this.button;
       document.body.style.overflow = this.button ? '' : 'hidden';
