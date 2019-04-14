@@ -12,13 +12,18 @@
 
 <script>
 export default {
-  props: ["items"]
+  props: {
+    items: {
+      type: String,
+      default: "Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8"
+    },
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 .box-fotos {
-  width: 450px;
+  width: 50%;
   height: auto;
   display: flex;
   flex-wrap: wrap;

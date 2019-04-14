@@ -3,6 +3,7 @@
     <div class="container">
       <div class="nav-bar--logo">
         <router-link :to="{name: 'index'}" tag="a" class="nav-bar--link">Dênner</router-link>
+        <app-linguage />
       </div>
       <div class="navigation">
         <div :class="{'btn-menu': true, 'btn-show': button}" @click="ativaMenu">
@@ -31,7 +32,11 @@
 </template>
 
 <script>
+import Linguage from '@/components/linguage.vue'
 export default {
+  components: {
+    'app-linguage' : Linguage,
+  },
   data() {
     return {
       background: "transparent",
