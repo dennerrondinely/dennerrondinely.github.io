@@ -44,7 +44,7 @@ export default {
       document.body.style.overflow = this.button ? '' : 'hidden';
     },
     handleScroll(evt, el) {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 400) {
         this.background =
           "linear-gradient(0deg, rgba(44, 44, 44, 0.2), #090909)";
       } else {

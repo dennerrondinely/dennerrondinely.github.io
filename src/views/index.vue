@@ -113,13 +113,64 @@
           structure. An artist of considerable range.
         </p>
       </div>
+      <div class="content-work">
+        <div :class="['work-btn', {'work-btn-active': foto}]" @click="workActive(1)">
+          <i class="fas fa-camera"></i>
+        </div>
+        <div :class="['work-btn', {'work-btn-active': work}]" @click="workActive(2)">
+          <i class="fas fa-palette"></i>
+        </div>
+        <div :class="['work-btn', {'work-btn-active': favorite}]" @click="workActive(3)">
+          <i class="fas fa-heart"></i>
+        </div>
+      </div>
+      <box-fotos :items="fotos" v-if="foto"/>
+      <box-fotos :items="works" v-if="work"/>
+      <box-fotos :items="favorites" v-if="favorite"/>
     </div>
   </div>
 </template>
 
 <script>
+import boxFotos from "@/views/components/fotos.vue";
+
 export default {
-  name: "index"
+  name: "index",
+  components: {
+    "box-fotos": boxFotos
+  },
+  data() {
+    return {
+      foto: true,
+      work: false,
+      favorite: false,
+      fotos: [
+        'Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8',
+        'flago.jpg?alt=media&token=00f05723-0425-4b41-af4d-fd5e8e78d2b7',
+        'Flobo.jpg?alt=media&token=ef119f65-0956-41e8-b7c4-f230595a36a6',
+        'Fsol.jpg?alt=media&token=27183ed1-6295-41dd-8eb3-c5f8d5b4c651',
+        ],
+      works: [
+        'flago.jpg?alt=media&token=00f05723-0425-4b41-af4d-fd5e8e78d2b7',
+        'Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8',
+        'Flobo.jpg?alt=media&token=ef119f65-0956-41e8-b7c4-f230595a36a6',
+        'Fsol.jpg?alt=media&token=27183ed1-6295-41dd-8eb3-c5f8d5b4c651',
+        ],
+      favorites: [
+        'Fsol.jpg?alt=media&token=27183ed1-6295-41dd-8eb3-c5f8d5b4c651',
+        'flago.jpg?alt=media&token=00f05723-0425-4b41-af4d-fd5e8e78d2b7',
+        'Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8',
+        'Flobo.jpg?alt=media&token=ef119f65-0956-41e8-b7c4-f230595a36a6',
+        ],
+    };
+  },
+  methods: {
+    workActive(value) {
+      this.foto = value === 1 ? true : false;
+      this.work = value === 2 ? true : false;
+      this.favorite = value === 3 ? true : false;
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -127,6 +178,37 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  .content-work {
+    height: auto;
+    width: 500px;
+    margin: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 40px;
+    .work-btn {
+      height: 100px;
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #808080;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .work-btn-active {
+      height: 100px;
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2),
+        0 13px 24px -11px rgb(255, 165, 0);
+      background: rgb(255, 165, 0);
+    }
+  }
   .content-info {
     text-align: center;
     display: flex;
