@@ -24,12 +24,12 @@
 </template>
 
 <script>
-import { brazil, usa, esp } from "@/sprite";
+import { brazil, usa, esp } from '@/sprite';
 export default {
   components: {
-    "icon-brasil": brazil,
-    "icon-usa": usa,
-    "icon-esp": esp,
+    'icon-brasil': brazil,
+    'icon-usa': usa,
+    'icon-esp': esp,
   },
   data() {
     return {
@@ -45,7 +45,7 @@ export default {
     selecionaCor(linguage) {
       this.texto = linguage === 'PT' ? 'Portugues' : linguage === 'ENG' ? 'Ingles' : linguage === 'ESP' ? 'Espanhol' : '';
       this.linguage = linguage;
-      this.$emit("linguage", this.linguage);
+      this.$emit('linguage', this.linguage);
       this.dropDown();
     }
   }

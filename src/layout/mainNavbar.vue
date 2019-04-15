@@ -32,35 +32,32 @@
 </template>
 
 <script>
-import Linguage from '@/components/linguage.vue'
+import Linguage from '@/components/linguage.vue';
+
 export default {
-  components: {
-    'app-linguage' : Linguage,
-  },
+  components: { 'app-linguage': Linguage },
   data() {
     return {
-      background: "transparent",
-      button: true
+      background: 'transparent',
+      button: true,
     };
   },
   methods: {
     mudaLinguagem(valor) {
       this.$store.dispatch('loadingLinguage', valor);
-      console.log(valor)
     },
     ativaMenu() {
       this.button = !this.button;
       document.body.style.overflow = this.button ? '' : 'hidden';
     },
-    handleScroll(evt, el) {
+    handleScroll() {
       if (window.scrollY > 400) {
-        this.background =
-          "linear-gradient(0deg, rgba(44, 44, 44, 0.2), #090909)";
+        this.background = 'linear-gradient(0deg, rgba(44, 44, 44, 0.2), #090909)';
       } else {
-        this.background = "transparent";
+        this.background = 'transparent';
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
