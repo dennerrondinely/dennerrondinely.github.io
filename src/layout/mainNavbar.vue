@@ -48,7 +48,7 @@ export default {
     },
     ativaMenu() {
       this.button = !this.button;
-      document.body.style.overflow = this.button ? '' : 'hidden';
+      document.querySelector('html').style.overflow = this.button ? '' : 'hidden';
     },
     handleScroll() {
       if (window.scrollY > 400) {

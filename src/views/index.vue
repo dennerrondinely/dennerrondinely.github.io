@@ -80,36 +80,36 @@
 </template>
 
 <script>
-import boxFotos from "@/views/components/fotos.vue";
+import boxFotos from '@/views/components/fotos.vue';
 
 export default {
-  name: "index",
+  name: 'index',
   components: {
-    "box-fotos": boxFotos
+    'box-fotos': boxFotos
   },
   data() {
     return {
       foto: true,
       work: false,
       favorite: false,
-      linguage: "PT",
+      linguage: 'PT',
       fotos: [
-        "Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8",
-        "flago.jpg?alt=media&token=00f05723-0425-4b41-af4d-fd5e8e78d2b7",
-        "Flobo.jpg?alt=media&token=ef119f65-0956-41e8-b7c4-f230595a36a6",
-        "Fsol.jpg?alt=media&token=27183ed1-6295-41dd-8eb3-c5f8d5b4c651"
+        'Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8',
+        'flago.jpg?alt=media&token=00f05723-0425-4b41-af4d-fd5e8e78d2b7',
+        'Flobo.jpg?alt=media&token=ef119f65-0956-41e8-b7c4-f230595a36a6',
+        'Fsol.jpg?alt=media&token=27183ed1-6295-41dd-8eb3-c5f8d5b4c651',
       ],
       works: [
-        "flago.jpg?alt=media&token=00f05723-0425-4b41-af4d-fd5e8e78d2b7",
-        "Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8",
-        "Flobo.jpg?alt=media&token=ef119f65-0956-41e8-b7c4-f230595a36a6",
-        "Fsol.jpg?alt=media&token=27183ed1-6295-41dd-8eb3-c5f8d5b4c651"
+        'flago.jpg?alt=media&token=00f05723-0425-4b41-af4d-fd5e8e78d2b7',
+        'Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8',
+        'Flobo.jpg?alt=media&token=ef119f65-0956-41e8-b7c4-f230595a36a6',
+        'Fsol.jpg?alt=media&token=27183ed1-6295-41dd-8eb3-c5f8d5b4c651',
       ],
       favorites: [
-        "Fsol.jpg?alt=media&token=27183ed1-6295-41dd-8eb3-c5f8d5b4c651",
-        "flago.jpg?alt=media&token=00f05723-0425-4b41-af4d-fd5e8e78d2b7",
-        "Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8",
-        "Flobo.jpg?alt=media&token=ef119f65-0956-41e8-b7c4-f230595a36a6"
+        'Fsol.jpg?alt=media&token=27183ed1-6295-41dd-8eb3-c5f8d5b4c651',
+        'flago.jpg?alt=media&token=00f05723-0425-4b41-af4d-fd5e8e78d2b7',
+        'Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8',
+        'Flobo.jpg?alt=media&token=ef119f65-0956-41e8-b7c4-f230595a36a6',
       ]
     };
   },
@@ -120,18 +120,18 @@ export default {
         getters => getters.linguage,
         linguage => {
           this.linguage = linguage;
-        }
+        },
       );
     },
     workActive(value) {
       this.foto = value === 1 ? true : false;
       this.work = value === 2 ? true : false;
       this.favorite = value === 3 ? true : false;
-    }
+    },
   },
   mounted() {
     this.loading();
-  }
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -293,4 +293,3 @@ export default {
   }
 }
 </style>
-
