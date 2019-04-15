@@ -39,26 +39,9 @@
         </div>
       </div>
       <div class="content-info">
-        <H2 v-if="linguage === 'ENG'">About me.</H2>
-        <H2 v-if="linguage === 'PT'">Sobre mim.</H2>
-        <H2 v-if="linguage === 'ESP'">Sobre mi.</H2>
-        <p v-if="linguage === 'ENG'">
-          An artist of considerable range, Ryan — the name taken by
-          Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records
-          all of his own music, giving it a warm, intimate feel with a solid groove
-          structure. An artist of considerable range.
-        </p>
-        <p v-if="linguage === 'PT'">
-          Um artista de alcance considerável, Ryan - o nome tomado por
-          Criado por Melbourne, Nick Murphy, baseado no Brooklyn, escreve, executa e grava
-          toda a sua própria música, dando-lhe uma sensação íntima e calorosa com um groove sólido
-          estrutura. Um artista de alcance considerável.
-        </p>
-        <p v-if="linguage === 'ESP'">
-          Un artista de considerable alcance, Ryan - el nombre tomado por
-          Nick Murphy, criado en Melbourne y residente en Brooklyn, escribe, interpreta y graba
-          toda su propia música, dándole una sensación cálida e íntima con un ritmo sólido
-          estructura. Un artista de considerable alcance.
+        <H2>{{ infoContet['info-title'] }}</H2>
+        <p>
+          {{ infoContet['content'] }}
         </p>
       </div>
       <div class="content-work">
@@ -80,6 +63,7 @@
 </template>
 
 <script>
+
 import boxFotos from '@/views/components/fotos.vue';
 
 export default {
@@ -92,7 +76,7 @@ export default {
       foto: true,
       work: false,
       favorite: false,
-      linguage: 'PT',
+      infoContet:'',
       fotos: [
         'Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8',
         'flago.jpg?alt=media&token=00f05723-0425-4b41-af4d-fd5e8e78d2b7',
@@ -114,12 +98,14 @@ export default {
     };
   },
   methods: {
-    loading() {
-      this.linguage = this.$store.getters.linguage;
+    async loading() {
+      let linguage = this.$store.getters.linguage;
+      this.infoContet = await fetch(`/data/${linguage.toLowerCase()}.json`).then(resp => resp.json()).then(data => data.index);
       this.$store.watch(
         getters => getters.linguage,
-        linguage => {
-          this.linguage = linguage;
+        async linguage => {
+          const url = linguage.toLowerCase();
+          this.infoContet = await fetch(`/data/${url}.json`).then(resp => resp.json()).then(data => data.index);
         },
       );
     },

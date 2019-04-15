@@ -10,15 +10,15 @@
     </div>
     <ul class="paleta--cores" :style="{'display': status ? 'none' : 'flex'}">
       <li class="paleta--item" @click="selecionaCor('PT')">
-        <span>Portugues</span>
+        <span>{{ subTexto.pt }}</span>
         <icon-brasil/>
       </li>
       <li class="paleta--item" @click="selecionaCor('ENG')">
-        <span>Ingles</span>
+        <span>{{ subTexto.eng }}</span>
         <icon-usa/>
       </li>
       <li class="paleta--item" @click="selecionaCor('ESP')">
-        <span>Espanhol</span>
+        <span>{{ subTexto.esp }}</span>
         <icon-esp/>
       </li>
     </ul>
@@ -37,7 +37,12 @@ export default {
     return {
       texto: 'Portugês',
       linguage: 'PT',
-      status: true
+      status: true,
+      subTexto: {
+        pt: 'Português',
+        eng: 'Inglês',
+        esp: 'Espanhol'
+      }
     };
   },
   methods: {
@@ -45,7 +50,25 @@ export default {
       this.status = !this.status;
     },
     selecionaCor(linguage) {
-      this.texto = linguage === 'PT' ? 'Portugues' : linguage === 'ENG' ? 'Ingles' : linguage === 'ESP' ? 'Espanhol' : '';
+
+        let eng = {
+          pt:'Portuguese',
+          eng:'English',
+          esp:'Spanish'
+        },
+        pt = {
+          pt: 'Português',
+          eng: 'Inglês',
+          esp: 'Espanhol'
+        },
+        esp = {
+          pt: 'Portugués',
+          eng: 'Inglés',
+          esp: 'Español'
+        }
+
+      this.texto = linguage === 'PT' ? 'Português' : linguage === 'ENG' ? 'English' : linguage === 'ESP' ? 'Español' : '';
+      this.subTexto = linguage === 'PT' ? pt : linguage === 'ENG' ? eng : linguage === 'ESP' ? esp : '';
       this.linguage = linguage;
       this.$emit('linguage', this.linguage);
       this.dropDown();

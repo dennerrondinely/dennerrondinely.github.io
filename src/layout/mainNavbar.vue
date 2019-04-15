@@ -11,16 +11,16 @@
         </div>
         <ul :class="{'navigation-nav': true, 'navigation-nav-show': !button}">
           <li class="nav-item">
-            <router-link :to="{name: ''}" tag="a">LinkTitle</router-link>
+            <router-link :to="{name: ''}" tag="a">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link :to="{name: ''}" tag="a">LinkTitle</router-link>
+            <router-link :to="{name: ''}" tag="a">Artes</router-link>
           </li>
           <li class="nav-item">
-            <router-link :to="{name: ''}" tag="a">LinkTitle</router-link>
+            <router-link :to="{name: ''}" tag="a">Curriculo</router-link>
           </li>
           <li class="nav-item">
-            <router-link :to="{name: ''}" tag="a">LinkTitle</router-link>
+            <router-link :to="{name: ''}" tag="a">Contato</router-link>
           </li>
           <div :class="{ 'btn-close': true}" @click="ativaMenu">
             <i class="fas fa-times"></i>
