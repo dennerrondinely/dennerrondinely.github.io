@@ -1,22 +1,24 @@
 <template>
   <div class="paleta">
     <div class="btn select--cores" @click="dropDown">
-      {{ texto }}
+      <span>
+        {{ texto }}
+      </span>
       <icon-brasil v-if="linguage === 'PT'"/>
       <icon-usa v-if="linguage === 'ENG'"/>
       <icon-esp v-if="linguage === 'ESP'"/>
     </div>
     <ul class="paleta--cores" :style="{'display': status ? 'none' : 'flex'}">
       <li class="paleta--item" @click="selecionaCor('PT')">
-        Portugues
+        <span>Portugues</span>
         <icon-brasil/>
       </li>
       <li class="paleta--item" @click="selecionaCor('ENG')">
-        Ingles
+        <span>Ingles</span>
         <icon-usa/>
       </li>
       <li class="paleta--item" @click="selecionaCor('ESP')">
-        Espanhol
+        <span>Espanhol</span>
         <icon-esp/>
       </li>
     </ul>
@@ -121,5 +123,27 @@ export default {
       cursor: pointer;
     }
   }
+}
+@media screen and (max-width: 1000px) {
+  .paleta {
+    width: 44px;
+  .select--cores {
+    span {
+      display: none;
+    }
+  }
+  .paleta--cores {
+
+    .paleta--item {
+      justify-content: center;
+      align-items: center;
+      span {
+        display: none;
+      }
+    }
+    .paleta--texto {
+    }
+  }
+}
 }
 </style>
