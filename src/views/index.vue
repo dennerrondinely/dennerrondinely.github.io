@@ -77,6 +77,7 @@ export default {
       work: false,
       favorite: false,
       infoContet:'',
+      position: 0,
       fotos: [
         'Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8',
         'flago.jpg?alt=media&token=00f05723-0425-4b41-af4d-fd5e8e78d2b7',
@@ -220,10 +221,12 @@ export default {
       width: 100%;
       height: 100%;
       min-height: 550px;
-      background-image: url("../assets/design.jpg");
-      background-size: cover;
-      background-position: center center;
       position: absolute;
+      background-image: url("../assets/design.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
       z-index: -1;
     }
     .content-profile {
