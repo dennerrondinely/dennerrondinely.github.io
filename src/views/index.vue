@@ -50,15 +50,15 @@
         </p>
         <p v-if="linguage === 'PT'">
           Um artista de alcance considerável, Ryan - o nome tomado por
-           Criado por Melbourne, Nick Murphy, baseado no Brooklyn, escreve, executa e grava
-           toda a sua própria música, dando-lhe uma sensação íntima e calorosa com um groove sólido
-           estrutura. Um artista de alcance considerável.
+          Criado por Melbourne, Nick Murphy, baseado no Brooklyn, escreve, executa e grava
+          toda a sua própria música, dando-lhe uma sensação íntima e calorosa com um groove sólido
+          estrutura. Um artista de alcance considerável.
         </p>
         <p v-if="linguage === 'ESP'">
           Un artista de considerable alcance, Ryan - el nombre tomado por
-           Nick Murphy, criado en Melbourne y residente en Brooklyn, escribe, interpreta y graba
-           toda su propia música, dándole una sensación cálida e íntima con un ritmo sólido
-           estructura. Un artista de considerable alcance.
+          Nick Murphy, criado en Melbourne y residente en Brooklyn, escribe, interpreta y graba
+          toda su propia música, dándole una sensación cálida e íntima con un ritmo sólido
+          estructura. Un artista de considerable alcance.
         </p>
       </div>
       <div class="content-work">
@@ -92,25 +92,25 @@ export default {
       foto: true,
       work: false,
       favorite: false,
-      linguage: 'PT',
+      linguage: "PT",
       fotos: [
-        'Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8',
-        'flago.jpg?alt=media&token=00f05723-0425-4b41-af4d-fd5e8e78d2b7',
-        'Flobo.jpg?alt=media&token=ef119f65-0956-41e8-b7c4-f230595a36a6',
-        'Fsol.jpg?alt=media&token=27183ed1-6295-41dd-8eb3-c5f8d5b4c651',
-        ],
+        "Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8",
+        "flago.jpg?alt=media&token=00f05723-0425-4b41-af4d-fd5e8e78d2b7",
+        "Flobo.jpg?alt=media&token=ef119f65-0956-41e8-b7c4-f230595a36a6",
+        "Fsol.jpg?alt=media&token=27183ed1-6295-41dd-8eb3-c5f8d5b4c651"
+      ],
       works: [
-        'flago.jpg?alt=media&token=00f05723-0425-4b41-af4d-fd5e8e78d2b7',
-        'Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8',
-        'Flobo.jpg?alt=media&token=ef119f65-0956-41e8-b7c4-f230595a36a6',
-        'Fsol.jpg?alt=media&token=27183ed1-6295-41dd-8eb3-c5f8d5b4c651',
-        ],
+        "flago.jpg?alt=media&token=00f05723-0425-4b41-af4d-fd5e8e78d2b7",
+        "Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8",
+        "Flobo.jpg?alt=media&token=ef119f65-0956-41e8-b7c4-f230595a36a6",
+        "Fsol.jpg?alt=media&token=27183ed1-6295-41dd-8eb3-c5f8d5b4c651"
+      ],
       favorites: [
-        'Fsol.jpg?alt=media&token=27183ed1-6295-41dd-8eb3-c5f8d5b4c651',
-        'flago.jpg?alt=media&token=00f05723-0425-4b41-af4d-fd5e8e78d2b7',
-        'Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8',
-        'Flobo.jpg?alt=media&token=ef119f65-0956-41e8-b7c4-f230595a36a6',
-        ],
+        "Fsol.jpg?alt=media&token=27183ed1-6295-41dd-8eb3-c5f8d5b4c651",
+        "flago.jpg?alt=media&token=00f05723-0425-4b41-af4d-fd5e8e78d2b7",
+        "Fespaco.jpg?alt=media&token=cad2d3aa-6208-4eb8-8419-62da261407b8",
+        "Flobo.jpg?alt=media&token=ef119f65-0956-41e8-b7c4-f230595a36a6"
+      ]
     };
   },
   methods: {
@@ -127,11 +127,11 @@ export default {
       this.foto = value === 1 ? true : false;
       this.work = value === 2 ? true : false;
       this.favorite = value === 3 ? true : false;
-    },
+    }
   },
   mounted() {
     this.loading();
-  },
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -141,7 +141,7 @@ export default {
   align-items: center;
   .content-work {
     height: auto;
-    width: 500px;
+    width: 30%;
     margin: 10px 20px;
     display: flex;
     justify-content: space-around;
@@ -282,6 +282,13 @@ export default {
           flex-direction: column;
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .content {
+    .content-work {
+      width: 70%;
     }
   }
 }

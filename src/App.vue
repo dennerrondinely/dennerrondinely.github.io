@@ -9,6 +9,9 @@
 </template>
 
 <style lang="scss">
+html {
+  overflow-x: hidden;
+}
 body {
   margin: 0px;
 }
